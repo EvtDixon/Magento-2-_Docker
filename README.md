@@ -18,13 +18,11 @@ FROM sensson/magento2
 COPY src/ /var/www/html/
 ```
 
-More details can be found in [Magento2 and Docker](DOCKER.md).
-
 # Persistent storage
 
 The container assumes you do not store data in a folder along with the
 application. Don't use Docker volumes for scale. Use CephFS, GlusterFS or
-integrate with S3 or S3-compatible services such as [Fuga.io](https://fuga.io).
+integrate with S3 or S3-compatible services.
 
 # Configuration
 
